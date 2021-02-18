@@ -1,0 +1,42 @@
+$primary: #ba68c8;
+$secondary: #00bcd4;
+// $danger: #ef5350;
+// $success: #62A731;
+// $warning: #ffee58;
+// $info: #03B3E4;
+// $light: #F2F1F1;
+// $enable-shadows: true;
+
+// $yiq-contrasted-threshold: 188;
+// @import '../node_modules/bootstrap/scss/bootstrap.scss';
+// @import '../node_modules/ngx-toastr/toastr-bs4-alert.scss';
+// html, body { height: 100%; }
+
+// @font-face {
+//     font-family: 'panton';
+//     src: url(assets/fonts/panton-regular.otf) format('opentype');
+// }
+
+// @font-face {
+//     font-family: 'panton';
+//     font-weight: bold;
+//     src: url(assets/fonts/panton-bold.otf) format('truetype');
+// }
+
+// @font-face {
+//     font-family: 'panton';
+//     font-weight: lighter;
+//     src: url(assets/fonts/panton-light.otf) format("opentype");
+// }
+
+// body { margin: 0; font-family: 'panton' }
+// body { margin: 0; font-family: 'panton', Roboto, "Helvetica Neue", sans-serif; }
+
+@import "variables";
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/utilities"; // add css utilities
+@import "reset";

@@ -1,0 +1,51 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.mat-button, .mat-icon-button, .mat-stroked-button, .mat-flat-button {
+    border-radius: 20px !important;
+}
+
+.mat-expansion-panel {
+    margin: 0 !important;
+    border-radius: 0 !important;
+}
+
+/* .mat-expansion-panel-header {
+    background-color: aqua;
+    padding: 0 24px;
+} */
+
+.mat-expansion-panel-header.mat-expanded {
+    height: 64px;
+    background-color: #00bcd4!important;
+}
+
+.mat-expansion-panel-header.mat-expanded .mat-expansion-panel-header-title{
+    color: white !important;
+}
+
+.mat-expansion-panel-body {
+    padding: 15px 24px 16px !important;
+    background-color:  rgb(247, 248, 250) !important;
+}
+
+.mat-slider-thumb-label {
+    transform: rotate(45deg) !important;
+    border-radius: 50% 50% 0 !important;
+    width: 30px !important;
+    height: 30px !important;
+    top: -38px !important;
+    right: -15px !important;
+  }
+
+.mat-slider-thumb {
+    transform: scale(0) !important;
+}
+
+.mat-slider-thumb-label-text {
+    opacity: 1 !important;
+    font-size: 10px !important;
+}
