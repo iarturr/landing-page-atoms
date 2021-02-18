@@ -1,0 +1,754 @@
+<div class="container-fluid p-0 position-relative">
+  <div class="bg-header"></div>
+  <div class="container">
+    <app-toolbar>loading</app-toolbar>
+    <!-- head -->
+    <div class="row py-5 mt-5">
+      <!-- <div class="bg-1"></div> -->
+      <div class="col-md-6">
+        <h2 class="mat-display-2 mb-3"><strong>Build applications <span class="text-primary">faster</span></strong></h2>
+        <p class="pb-4">
+          Hire experts & get your job done. The right IT security
+          <br>
+          solutions. Protect your clients and computer systems from
+          <br>
+          hackers and fight against malware.
+          <br>
+          <br>
+          <span class="text-secondary">For as low as <span class="text-primary">$0.95</span> per user account</span>
+        </p>
+        <button mat-flat-button color="accent" class="mr-4" (click)="openDialog()">
+          WATCH DEMO
+          <mat-icon class="">play_circle_outline</mat-icon>
+        </button>
+        <button mat-flat-button color="primary">START NOW</button>
+      </div>
+      <div class="col-md-4">
+        <app-simulator></app-simulator>
+      </div>
+    </div>
+
+    <!-- features -->
+    <div class="row">
+      <div class="col-md-8 offset-md-2 text-center py-5">
+        <h2 class="mat-display-1 mb-1"><strong>Features designed for you</strong></h2>
+        <mat-divider class="main-divider"></mat-divider>
+        <p class="pt-3">
+          We belive we have created the most efficient SaaS landing page for your users. Landing page with features that
+          will convince you to use it for your SaaS business.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 py-5">
+        <img src="../../../assets/img/icons/icons-64-violet/responsive-64.png" class="figure-img img-fluid rounded"
+          alt="...">
+        <h2 class="font-weight-light mb-2">Responsive <strong>Layout Template</strong></h2>
+        <mat-divider class="divider-primary"></mat-divider>
+        <p class="pt-3">Responsive code that makes your landing page look good on all devices (desktops, tablets, and
+          phones).
+          Created
+          with
+          mobile specialists.</p>
+      </div>
+      <div class="col-md-4 py-5">
+        <img src="../../../assets/img/icons/icons-64-violet/desktop-chart-64.png" class="figure-img img-fluid rounded"
+          alt="...">
+        <h2 class="font-weight-light mb-2"><strong>SaaS Landing</strong> Page Analysis</h2>
+        <mat-divider class="divider-primary"></mat-divider>
+        <p class="pt-3">A perfect structure created after we analized trends in Saas landing page designs. Analysis made
+          to the most
+          popular Saas businesses.</p>
+      </div>
+      <div class="col-md-4 py-5">
+        <img src="../../../assets/img/icons/icons-64-violet/browser-64.png" class="figure-img img-fluid rounded"
+          alt="...">
+        <h2 class="font-weight-light mb-2"><strong>Smart</strong> BEM <strong>Grid</strong></h2>
+        <mat-divider class="divider-primary"></mat-divider>
+        <p class="pt-3">
+          Blocks, Elements and Modifiers. A smart HTML/CSS structure that can easely be reused. Layout driven by the
+          purpose
+          of modularity.
+        </p>
+      </div>
+      <div class="col-md-4 py-5">
+        <img src="../../../assets/img/icons/icons-64-violet/desktop-windows-64.png" class="figure-img img-fluid rounded"
+          alt="...">
+        <h2 class="font-weight-light mb-2"><strong>Multiple</strong> Unique <strong>Designs</strong></h2>
+        <mat-divider class="divider-primary"></mat-divider>
+        <p class="pt-3">
+          Choose between multiple unique designs and easy integrate elements from one design to another. Following the
+          latest design trends.
+        </p>
+      </div>
+      <div class="col-md-4 py-5">
+        <img src="../../../assets/img/icons/icons-64-violet/customizer-64.png" class="figure-img img-fluid rounded"
+          alt="...">
+        <h2 class="font-weight-light mb-2">Flexible <strong>HTML Sections</strong></h2>
+        <mat-divider class="divider-primary"></mat-divider>
+        <p class="pt-3"> Simple and Smart HTML code that works reintegrated in any part of the layout. Reuse the
+          elements from one
+          design
+          to another.</p>
+      </div>
+      <div class="col-md-4 py-5">
+        <img src="../../../assets/img/icons/icons-64-violet/users-64.png" class="figure-img img-fluid rounded"
+          alt="...">
+        <h2 class="font-weight-light mb-2"><strong>User</strong> Friendly</h2>
+        <mat-divider class="divider-primary"></mat-divider>
+        <p class="pt-3">Easy to navigate. Made with user experience in mind, in order to provide the perfect landing
+          page experience
+          for
+          your client.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fliud bg-grey p-0">
+  <div class="container">
+    <!-- seaction easy to use -->
+    <div class="row py-5">
+      <div class="col-md-8 offset-2 text-center">
+        <h2 class="mat-display-1 mb-1"><strong>Easy to use API</strong></h2>
+        <mat-divider class="main-divider"></mat-divider>
+        <p class="pt-3">Guide to setup and configuration. You can present below a guide and a description of how your
+          system
+          configuration works and add some animated screens.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <mat-tab-group mat-align-tabs="end">
+          <mat-tab label="Initializing JS">
+            <div class="row py-5">
+              <div class="col">
+                <mat-card class="p-0">
+                  <mat-card-content>
+                    <div class="row">
+                      <div class="col p-3">
+                        <pre [innerHTML]="'
+                        ImageData: object = {
+                            text: STRING,
+                            position: STRING,
+                            color: STRING,
+                            icon: {
+                                fa: BOOLEAN,
+                                url: STRING,
+                                height: INT,
+                                width: INT,
+                                altText: STRING
+                            }
+                        }'">
+                        </pre>
+                      </div>
+                    </div>
+                  </mat-card-content>
+                  <mat-card-actions class="text-right bg-grey-str py-4">
+                    <button mat-flat-button color="accent" class="mr-4">
+                      GET THE CODE
+                    </button>
+                    <button mat-flat-button color="primary" class="mr-4">RUN EXAMPLE</button>
+                  </mat-card-actions>
+                </mat-card>
+              </div>
+            </div>
+          </mat-tab>
+          <mat-tab label="Configuration CSS">
+            <div class="row py-5">
+              <div class="col">
+                <mat-card class="p-0">
+                  <mat-card-content>
+                    <div class="row">
+                      <div class="col p-3">
+                        <pre [innerHTML]="'codigo'">
+                        </pre>
+                      </div>
+                    </div>
+                  </mat-card-content>
+                  <mat-card-actions class="text-right bg-grey-str py-4">
+                    <button mat-flat-button color="accent" class="mr-4">
+                      GET THE CODE
+                    </button>
+                    <button mat-flat-button color="primary" class="mr-4">RUN EXAMPLE</button>
+                  </mat-card-actions>
+                </mat-card>
+              </div>
+            </div>
+          </mat-tab>
+          <mat-tab label="Security Levels API">
+            <div class="row py-5">
+              <div class="col">
+                <mat-card class="p-0">
+                  <mat-card-content>
+                    <div class="row">
+                      <div class="col p-3">
+                        <pre [innerHTML]="'codigo'">
+                        </pre>
+                      </div>
+                    </div>
+                  </mat-card-content>
+                  <mat-card-actions class="text-right bg-grey-str py-4">
+                    <button mat-flat-button color="accent" class="mr-4">
+                      GET THE CODE
+                    </button>
+                    <button mat-flat-button color="primary" class="mr-4">RUN EXAMPLE</button>
+                  </mat-card-actions>
+                </mat-card>
+              </div>
+            </div>
+          </mat-tab>
+        </mat-tab-group>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fliud p-0">
+  <div class="container">
+    <!-- price -->
+    <div class="row py-5">
+      <div class="col-md-8 offset-2 text-center">
+        <h2 class="mat-display-1 mb-1"><strong>Flexible Pricing</strong></h2>
+        <mat-divider class="main-divider"></mat-divider>
+        <p class="pt-3">
+          We belive we have created the most efficient SaaS landing page for your users. Landing page with features
+          that will convince you to use it for your SaaS business.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <mat-tab-group mat-align-tabs="center">
+          <mat-tab label="Monthly">
+            <div class="row py-5">
+              <div class="col-md-3 p-0">
+                <mat-card [class.mat-elevation-z0]="true" class="card-square border-right">
+                  <mat-card-content>
+                    <div class="row">
+                      <div class="col-12 text-center">
+                        <h1 class="mb-3 pt-5"><strong>FREE</strong></h1>
+                        <mat-divider class="divider-black"></mat-divider>
+                      </div>
+                      <div class="col-12 text-center pt-5">
+                        <h1><strong>$<span class="mat-display-3">0</span> /month</strong></h1>
+                      </div>
+                      <div class="col-12">
+                        <mat-list>
+                          <mat-list-item>
+                            <mat-icon mat-list-icon>done</mat-icon>
+                            <div mat-line><strong>1</strong> User Acount</div>
+                          </mat-list-item>
+                          <mat-list-item>
+                            <mat-icon mat-list-icon>done</mat-icon>
+                            <div mat-line><strong>10</strong> Team Account</div>
+                          </mat-list-item>
+                          <mat-list-item>
+                            <mat-icon mat-list-icon>done</mat-icon>
+                            <div mat-line><strong>Unlimited</strong> Emails Accounts</div>
+                          </mat-list-item>
+                          <mat-list-item>
+                            <mat-icon mat-list-icon>done</mat-icon>
+                            <div mat-line>Set And Manage Permissions</div>
+                          </mat-list-item>
+                          <mat-list-item>
+                            <mat-icon mat-list-icon></mat-icon>
+                            <div mat-line><s>API & extension support</s></div>
+                          </mat-list-item>
+                          <mat-list-item>
+                            <mat-icon mat-list-icon></mat-icon>
+                            <div mat-line><s>Developer support</s></div>
+                          </mat-list-item>
+                          <mat-list-item>
+                            <mat-icon mat-list-icon></mat-icon>
+                            <div mat-line><s>A/B Testing</s></div>
+                          </mat-list-item>
+                        </mat-list>
+                      </div>
+                    </div>
+                  </mat-card-content>
+                  <mat-card-actions class="text-center pb-5">
+                    <button mat-stroked-button color="accent" class="mr-4 px-5 border-secondary">Sign up</button>
+                  </mat-card-actions>
+                </mat-card>
+              </div>
+              <div class="col-md-3 p-0">
+                <mat-card [class.mat-elevation-z0]="true">
+                  <mat-card-content>
+                    <div class="row">
+                      <div class="col-12 text-center">
+                        <h1 class="mb-3 pt-5"><strong>STARTUP</strong></h1>
+                        <mat-divider class="divider-black"></mat-divider>
+                      </div>
+                      <div class="col-12 text-center pt-5">
+                        <h1><strong>$<span class="mat-display-3">29</span> /month</strong></h1>
+                      </div>
+                      <div class="col-12">
+                        <mat-list>
+                          <mat-list-item>
+                            <mat-icon mat-list-icon>done</mat-icon>
+                            <div mat-line><strong>10</strong> User Acount</div>
+                          </mat-list-item>
+                          <mat-list-item>
+                            <mat-icon mat-list-icon>done</mat-icon>
+                            <div mat-line><strong>100</strong> Team Account</div>
+                          </mat-list-item>
+                          <mat-list-item>
+                            <mat-icon mat-list-icon>done</mat-icon>
+                            <div mat-line><strong>Unlimited</strong> Emails Accounts</div>
+                          </mat-list-item>
+                          <mat-list-item>
+                            <mat-icon mat-list-icon>done</mat-icon>
+                            <div mat-line>Set And Manage Permissions</div>
+                          </mat-list-item>
+                          <mat-list-item>
+                            <mat-icon mat-list-icon>done</mat-icon>
+                            <div mat-line>API & extension support</div>
+                          </mat-list-item>
+                          <mat-list-item>
+                            <mat-icon mat-list-icon></mat-icon>
+                            <div mat-line><s>Developer support</s></div>
+                          </mat-list-item>
+                          <mat-list-item>
+                            <mat-icon mat-list-icon></mat-icon>
+                            <div mat-line><s>A/B Testing</s></div>
+                          </mat-list-item>
+                        </mat-list>
+                      </div>
+                    </div>
+                  </mat-card-content>
+                  <mat-card-actions class="text-center pb-5">
+                    <button mat-stroked-button color="accent" class="mr-4 px-5 border-secondary">Sign up</button>
+                  </mat-card-actions>
+                </mat-card>
+              </div>
+              <div class="col-md-3 p-0">
+                <mat-card class="bg-primary text-white p-0" [class.mat-elevation-z12]="true">
+                  <div class="corner"><span>POPULAR</span></div>
+                  <mat-card-content class="p-3">
+                    <div class="row">
+                      <div class="col-12 text-center">
+                        <h1 class="mat-display-1 pt-5 mb-3"><strong>PRO</strong></h1>
+                        <mat-divider class="divider-white"></mat-divider>
+                      </div>
+                      <div class="col-12 text-center pt-5">
+                        <h1><strong>$<span class="mat-display-3">49</span> /month</strong></h1>
+                      </div>
+                      <div class="col-12">
+                        <mat-list>
+                          <mat-list-item class="text-white">
+                            <mat-icon mat-list-icon>done</mat-icon>
+                            <div mat-line><strong>50</strong> User Acount</div>
+                          </mat-list-item>
+                          <mat-list-item class="text-white">
+                            <mat-icon mat-list-icon>done</mat-icon>
+                            <div mat-line><strong>500</strong> Team Account</div>
+                          </mat-list-item>
+                          <mat-list-item class="text-white">
+                            <mat-icon mat-list-icon>done</mat-icon>
+                            <div mat-line><strong>Unlimited</strong> Emails Accounts</div>
+                          </mat-list-item>
+                          <mat-list-item class="text-white">
+                            <mat-icon mat-list-icon>done</mat-icon>
+                            <div mat-line>Set And Manage Permissions</div>
+                          </mat-list-item>
+                          <mat-list-item class="text-white">
+                            <mat-icon mat-list-icon>done</mat-icon>
+                            <div mat-line>API & extension support</div>
+                          </mat-list-item>
+                          <mat-list-item class="text-white">
+                            <mat-icon mat-list-icon>done</mat-icon>
+                            <div mat-line>Developer support</div>
+                          </mat-list-item>
+                          <mat-list-item class="text-white">
+                            <mat-icon mat-list-icon></mat-icon>
+                            <div mat-line><s>A/B Testing</s></div>
+                          </mat-list-item>
+                        </mat-list>
+                      </div>
+                    </div>
+                  </mat-card-content>
+                  <mat-card-actions class="text-center pb-5">
+                    <button mat-flat-button color="accent" class="mr-4 px-5">Sign up</button>
+                  </mat-card-actions>
+                </mat-card>
+              </div>
+              <div class="col-md-3 p-0">
+                <mat-card class="card-square" [class.mat-elevation-z0]="true">
+                  <mat-card-content>
+                    <div class="row">
+                      <div class="col-12 text-center">
+                        <h1 class="mb-3 pt-5"><strong>ULTRA</strong></h1>
+                        <mat-divider class="divider-black"></mat-divider>
+                      </div>
+                      <div class="col-12 text-center pt-5">
+                        <h1><strong>$<span class="mat-display-3">99</span> /month</strong></h1>
+                      </div>
+                      <div class="col-12">
+                        <mat-list>
+                          <mat-list-item>
+                            <mat-icon mat-list-icon>done</mat-icon>
+                            <div mat-line><strong>Unlimited</strong> User Acount</div>
+                          </mat-list-item>
+                          <mat-list-item>
+                            <mat-icon mat-list-icon>done</mat-icon>
+                            <div mat-line><strong>Unlimited</strong> Team Account</div>
+                          </mat-list-item>
+                          <mat-list-item>
+                            <mat-icon mat-list-icon>done</mat-icon>
+                            <div mat-line><strong>Unlimited</strong> Emails Accounts</div>
+                          </mat-list-item>
+                          <mat-list-item>
+                            <mat-icon mat-list-icon>done</mat-icon>
+                            <div mat-line>Set And Manage Permissions</div>
+                          </mat-list-item>
+                          <mat-list-item>
+                            <mat-icon mat-list-icon>done</mat-icon>
+                            <div mat-line>API & extension support</div>
+                          </mat-list-item>
+                          <mat-list-item>
+                            <mat-icon mat-list-icon>done</mat-icon>
+                            <div mat-line>Developer support</div>
+                          </mat-list-item>
+                          <mat-list-item>
+                            <mat-icon mat-list-icon>done</mat-icon>
+                            <div mat-line> A/B Testing</div>
+                          </mat-list-item>
+                        </mat-list>
+                      </div>
+                    </div>
+                  </mat-card-content>
+                  <mat-card-actions class="text-center pb-5">
+                    <button mat-stroked-button color="accent" class="mr-4 px-5 border-secondary">Sign up</button>
+                  </mat-card-actions>
+                </mat-card>
+              </div>
+            </div>
+          </mat-tab>
+          <mat-tab label="Yearly">
+            <div class="row py-5">
+
+              <div class="col-md-3 offset-3 p-0">
+                <mat-card [class.mat-elevation-z0]="true">
+                  <mat-card-content>
+                    <div class="row">
+                      <div class="col-12 text-center">
+                        <h1 class="mb-3 pt-5"><strong>STARTUP</strong></h1>
+                        <mat-divider class="divider-black"></mat-divider>
+                      </div>
+                      <div class="col-12 text-center pt-5">
+                        <h1><strong>$<span class="mat-display-3">129</span> /month</strong></h1>
+                      </div>
+                      <div class="col-12">
+                        <mat-list>
+                          <mat-list-item>
+                            <mat-icon mat-list-icon>done</mat-icon>
+                            <div mat-line><strong>10</strong> User Acount</div>
+                          </mat-list-item>
+                          <mat-list-item>
+                            <mat-icon mat-list-icon>done</mat-icon>
+                            <div mat-line><strong>100</strong> Team Account</div>
+                          </mat-list-item>
+                          <mat-list-item>
+                            <mat-icon mat-list-icon>done</mat-icon>
+                            <div mat-line><strong>Unlimited</strong> Emails Accounts</div>
+                          </mat-list-item>
+                          <mat-list-item>
+                            <mat-icon mat-list-icon>done</mat-icon>
+                            <div mat-line>Set And Manage Permissions</div>
+                          </mat-list-item>
+                          <mat-list-item>
+                            <mat-icon mat-list-icon>done</mat-icon>
+                            <div mat-line>API & extension support</div>
+                          </mat-list-item>
+                          <mat-list-item>
+                            <mat-icon mat-list-icon></mat-icon>
+                            <div mat-line><s>Developer support</s></div>
+                          </mat-list-item>
+                          <mat-list-item>
+                            <mat-icon mat-list-icon></mat-icon>
+                            <div mat-line><s>A/B Testing</s></div>
+                          </mat-list-item>
+                        </mat-list>
+                      </div>
+                    </div>
+                  </mat-card-content>
+                  <mat-card-actions class="text-center pb-5">
+                    <button mat-stroked-button color="accent" class="mr-4 px-5 border-secondary">Sign up</button>
+                  </mat-card-actions>
+                </mat-card>
+              </div>
+              <div class="col-md-3 p-0">
+                <mat-card class="bg-primary text-white p-0" [class.mat-elevation-z12]="true">
+                  <div class="corner"><span>POPULAR</span></div>
+                  <mat-card-content class="p-3">
+                    <div class="row">
+                      <div class="col-12 text-center">
+                        <h1 class="mat-display-1 pt-5 mb-3"><strong>PRO</strong></h1>
+                        <mat-divider class="divider-white"></mat-divider>
+                      </div>
+                      <div class="col-12 text-center pt-5">
+                        <h1><strong>$<span class="mat-display-3">149</span> /month</strong></h1>
+                      </div>
+                      <div class="col-12">
+                        <mat-list>
+                          <mat-list-item class="text-white">
+                            <mat-icon mat-list-icon>done</mat-icon>
+                            <div mat-line><strong>50</strong> User Acount</div>
+                          </mat-list-item>
+                          <mat-list-item class="text-white">
+                            <mat-icon mat-list-icon>done</mat-icon>
+                            <div mat-line><strong>500</strong> Team Account</div>
+                          </mat-list-item>
+                          <mat-list-item class="text-white">
+                            <mat-icon mat-list-icon>done</mat-icon>
+                            <div mat-line><strong>Unlimited</strong> Emails Accounts</div>
+                          </mat-list-item>
+                          <mat-list-item class="text-white">
+                            <mat-icon mat-list-icon>done</mat-icon>
+                            <div mat-line>Set And Manage Permissions</div>
+                          </mat-list-item>
+                          <mat-list-item class="text-white">
+                            <mat-icon mat-list-icon>done</mat-icon>
+                            <div mat-line>API & extension support</div>
+                          </mat-list-item>
+                          <mat-list-item class="text-white">
+                            <mat-icon mat-list-icon>done</mat-icon>
+                            <div mat-line>Developer support</div>
+                          </mat-list-item>
+                          <mat-list-item class="text-white">
+                            <mat-icon mat-list-icon></mat-icon>
+                            <div mat-line><s>A/B Testing</s></div>
+                          </mat-list-item>
+                        </mat-list>
+                      </div>
+                    </div>
+                  </mat-card-content>
+                  <mat-card-actions class="text-center pb-5">
+                    <button mat-flat-button color="accent" class="mr-4 px-5">Sign up</button>
+                  </mat-card-actions>
+                </mat-card>
+              </div>
+              
+            </div>
+          </mat-tab>
+        </mat-tab-group>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- mapa -->
+<div class="container-fliud bg-grey p-0 bg-map position-relative">
+  <div><img src="../../../assets/img/avatar-1.jpg"
+      class="rounded-circle figure-img img-fluid rounded avatar a-1 d-none d-sm-block" alt="..."></div>
+  <div><img src="../../../assets/img/avatar-2.jpg"
+      class="rounded-circle figure-img img-fluid rounded avatar a-2 d-none d-sm-block" alt="..."></div>
+  <div><img src="../../../assets/img/avatar-3.jpg"
+      class="rounded-circle figure-img img-fluid rounded avatar a-3 d-none d-sm-block" alt="..."></div>
+  <div><img src="../../../assets/img/avatar-4.jpg" class="rounded-circle figure-img img-fluid rounded avatar a-4"
+      alt="..."></div>
+  <div><img src="../../../assets/img/avatar-5.jpg"
+      class="rounded-circle figure-img img-fluid rounded avatar a-5 d-none d-sm-block" alt="..."></div>
+  <div><img src="../../../assets/img/avatar-6.jpg" class="rounded-circle figure-img img-fluid rounded avatar a-6"
+      alt="..."></div>
+  <div class="container">
+    <div class="row py-5">
+      <div class="col-md-8 offset-2 text-center">
+        <h2 class="mat-display-1 mb-1"><strong>Trusted by world experts</strong></h2>
+        <mat-divider class="main-divider"></mat-divider>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="container-fliud p-0">
+  <div class="container">
+    <!-- questions -->
+    <div class="row py-5 mt-5">
+      <div class="col-md-6">
+        <h1 class="mat-h1"><strong>Frequently asked questions</strong></h1>
+        <p>Have a presale question about our products and features? Or looking for a refund? We would love to hear what
+          you
+          concern is.</p>
+        <mat-list>
+          <mat-list-item>
+            <mat-icon mat-list-icon>done</mat-icon>
+            <div mat-line>Simple and Smart HTML code</div>
+          </mat-list-item>
+          <mat-list-item>
+            <mat-icon mat-list-icon>done</mat-icon>
+            <div mat-line>Works reintegrated in any part of the layout</div>
+          </mat-list-item>
+          <mat-list-item>
+            <mat-icon mat-list-icon>done</mat-icon>
+            <div mat-line>Reuse the elements from one design to another</div>
+          </mat-list-item>
+        </mat-list>
+
+      </div>
+      <div class="col-md-6">
+        <mat-accordion>
+          <mat-expansion-panel [class.mat-elevation-z0]="true" class="border-bottom">
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Installing the app on all devices
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <p>A</p>
+          </mat-expansion-panel>
+          <mat-expansion-panel [class.mat-elevation-z0]="true" class="border-bottom">
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                How to implement and manage API key
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <p>B</p>
+          </mat-expansion-panel>
+          <mat-expansion-panel [class.mat-elevation-z0]="true" class="border-bottom">
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                How to set up and optimize your account
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <p>C</p>
+          </mat-expansion-panel>
+          <mat-expansion-panel [class.mat-elevation-z0]="true" class="border-bottom">
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Manage your account access and security settings
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <p>Guide to setup and configuration. You can present below a guide and a description of how your system
+              configuration works and add some animated screens. We belive we have created the most efficient SaaS
+              landing
+              page for your users. Landing page with features that will convince you to use it for your SaaS business.
+            </p>
+          </mat-expansion-panel>
+          <mat-expansion-panel [class.mat-elevation-z0]="true" class="border-bottom">
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                API integration basic overview
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <p>E</p>
+          </mat-expansion-panel>
+          <mat-expansion-panel [class.mat-elevation-z0]="true" class="border-bottom">
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Deactivating or deleting your account
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <p>F</p>
+          </mat-expansion-panel>
+        </mat-accordion>
+      </div>
+    </div>
+    <!-- cards -->
+    <div class="row">
+      <div class="col-md">
+        <mat-card [class.mat-elevation-z0]="true" class="card-support">
+          <mat-card-content>
+            <div class="row p-5">
+              <div class="col-md-12 pb-2">
+                <img src="../../../assets/img/icons/icons-64-violet/support-64.png" class="figure-img img-fluid rounded"
+                  alt="...">
+              </div>
+              <div class="col-md-12 py-2">
+                <h3 class="mb-2">Help & Support</h3>
+                <mat-divider class="divider-blue"></mat-divider>
+              </div>
+              <div class="col-md-12 py-3">
+                Our 24/7 support team is here to help you and make sure our product is up to date.
+              </div>
+              <div class="col-md-12">
+                <button mat-flat-button color="primary">support@supportemail.com</button>
+              </div>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </div>
+      <div class="col-md">
+        <mat-card [class.mat-elevation-z0]="true" class="card-support">
+          <mat-card-content>
+            <div class="row p-5">
+              <div class="col-md-12 pb-2">
+                <img src="../../../assets/img/icons/icons-64-violet/globe-64.png" class="figure-img img-fluid rounded"
+                  alt="...">
+              </div>
+              <div class="col-md-12 py-2">
+                <h3 class="mb-2">Media & Press</h3>
+                <mat-divider class="divider-blue"></mat-divider>
+              </div>
+              <div class="col-md-12 py-3">
+                Online awards and publications. Get our media resources and learn about our company.
+              </div>
+              <div class="col-md-12">
+                <button mat-flat-button color="primary">media@supportemail.com</button>
+              </div>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </div>
+      <div class="col-md">
+        <mat-card [class.mat-elevation-z0]="true" class="card-support">
+          <mat-card-content>
+            <div class="row p-5">
+              <div class="col-md-12 pb-2">
+                <img src="../../../assets/img/icons/icons-64-violet/wallet-64.png" class="figure-img img-fluid rounded"
+                  alt="...">
+              </div>
+              <div class="col-md-12 py-2">
+                <h3 class="mb-2">Sales</h3>
+                <mat-divider class="divider-blue"></mat-divider>
+              </div>
+              <div class="col-md-12 py-3">
+                Have a presale question about our products and features? Or looking for a refund?
+              </div>
+              <div class="col-md-12">
+                <button mat-flat-button color="primary">sales@supportemail.com</button>
+              </div>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+    <div class="row py-5 text-center">
+      <div class="col-md py-5">
+        <img src="../../../assets/img/clients/clients-logo1.png" class="figure-img img-fluid rounded" alt="...">
+      </div>
+      <div class="col-md py-5">
+        <img src="../../../assets/img/clients/clients-logo2.png" class="figure-img img-fluid rounded" alt="...">
+      </div>
+      <div class="col-md py-5">
+        <img src="../../../assets/img/clients/clients-logo3.png" class="figure-img img-fluid rounded" alt="...">
+      </div>
+      <div class="col-md py-5">
+        <img src="../../../assets/img/clients/clients-logo4.png" class="figure-img img-fluid rounded" alt="...">
+      </div>
+      <div class="col-md py-5">
+        <img src="../../../assets/img/clients/clients-logo5.png" class="figure-img img-fluid rounded" alt="...">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fliud bg-grey p-0 position-relative">
+  <div class="bg-footer-color"></div>
+  <div class="bg-footer"></div>
+  <div class="container">
+    <div class="row py-5 mb-5">
+      <div class="col-md pt-5">
+        <h1 class="mat-display-1 mb-3">Start <strong class="text-primary">growing</strong> your bussiness.</h1>
+        <p>Your issue is our main priority. Our 24/7 support team is here to help you and make sure our product is up to
+          date. Have a presale question about our products and features? Or looking for a refund? We would love to hear
+          what
+          you concern is. Online awards and publications.</p>
+      </div>
+      <div class="col-md align-self-center text-center pt-5">
+        <button mat-flat-button color="accent" class="px-5 py-2 xlg-button">GET STARED NOW!</button>
+      </div>
+    </div>
+    <app-footer>loading</app-footer>
+  </div>
+</div>

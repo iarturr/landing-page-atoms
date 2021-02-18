@@ -1,0 +1,22 @@
+<mat-toolbar color="secondary" class="toolbar-s">
+
+  <mat-toolbar-row>
+    <span class="toolbar-title"> LATERAL </span>
+    <span class="spacer"></span>
+    <button mat-button color="accent" class="mr-4">HOME</button>
+    <button mat-button class="mr-4 d-none d-sm-block" [matMenuTriggerFor]="menu">
+      FEATURES
+      <mat-icon class="sm-icon">keyboard_arrow_down</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>Item 1</button>
+      <button mat-menu-item>Item 2</button>
+    </mat-menu>
+    <button mat-button class="mr-4 d-none d-sm-block">PRICING</button>
+    <button mat-button class="mr-4 d-none d-sm-block">CONTACT</button>
+    <button mat-stroked-button color="accent" class="mr-4 border-secondary">LOGIN</button>
+    <button mat-stroked-button class="d-none d-sm-block">GET STARTED</button>
+  </mat-toolbar-row>
+  
+
+</mat-toolbar>

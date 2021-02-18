@@ -1,0 +1,16 @@
+.mat-divider-horizontal {
+    position: relative !important;
+}
+
+.month-no-selected {
+    border: 1px solid !important;
+    border-color: blueviolet !important;
+    background-color: transparent !important;
+    color: black !important;
+}
+
+.main-divider {
+    border-top-color: black !important;
+    width: 10% !important;
+    display: inline-block;
+}

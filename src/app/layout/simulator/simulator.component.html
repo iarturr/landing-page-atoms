@@ -1,0 +1,91 @@
+<mat-card class="example-card">
+  <mat-card-content>
+    <div class="row">
+      <div class="col text-center">
+        <h2 class="mb-0">SIMULADOR DE CRÉDITO</h2>
+        <mat-divider class="main-divider"></mat-divider>
+      </div>
+    </div>
+    <div class="row pt-4">
+      <div class="col text-right">
+        Monto deseado
+        <mat-slider thumbLabel tickInterval="1000" min="1000" max="20000" color="primary" [(ngModel)]="desiredAmount"
+          class="d-block"></mat-slider>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-right">
+        Tasa anual
+        <mat-slider thumbLabel [displayWith]="formatLabelPercentage" tickInterval="2" min="1" max="30" color="primary"
+          step=".1" [(ngModel)]="annualRate" class="d-block"></mat-slider>
+      </div>
+    </div>
+    <mat-divider class="my-3"></mat-divider>
+    <div class="row pb-3">
+      <div class="col text-center">
+        <strong>Plazo en meses</strong>
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col">
+        <button mat-mini-fab color="primary" [class.mat-elevation-z0]="true" [ngClass]="{'month-no-selected': months !== 12}" (click)="months = 12">
+          12
+        </button>
+      </div>
+      <div class="col">
+        <button mat-mini-fab color="primary" [class.mat-elevation-z0]="true" [ngClass]="{'month-no-selected': months !== 24}" (click)="months = 24">
+          24
+        </button>
+      </div>
+      <div class="col">
+        <button mat-mini-fab color="primary" [class.mat-elevation-z0]="true" [ngClass]="{'month-no-selected': months !== 36}" (click)="months = 36">
+          36
+        </button>
+      </div>
+    </div>
+    <mat-divider class="my-3"></mat-divider>
+    <div class="row py-1">
+      <div class="col text-right align-self-center text-muted">Pago mensual</div>
+      <div class="col align-self-center">
+        <button mat-stroked-button disabled class="w-100 ">
+          <span class="text-dark">${{desiredAmount/months + (((annualRate*desiredAmount)/100)/months) | number}}</span>
+        </button>
+      </div>
+    </div>
+    <div class="row py-1">
+      <div class="col text-right align-self-center text-muted">Comisión de apertura</div>
+      <div class="col align-self-center">
+        <button mat-stroked-button disabled class="w-100 ">
+          <span class="text-dark">${{tax | number}}</span>
+        </button>
+      </div>
+    </div>
+    <div class="row py-1">
+      <div class="col text-right align-self-center text-muted">Monto neto depositado</div>
+      <div class="col align-self-center">
+        <button mat-stroked-button disabled class="w-100 ">
+          <span class="text-dark">${{ desiredAmount - tax |number}}</span>
+        </button>
+      </div>
+    </div>
+    <div class="row py-1">
+      <div class="col text-right align-self-center text-muted">Total pagado</div>
+      <div class="col align-self-center">
+        <button mat-stroked-button disabled class="w-100 ">
+          <span class="text-dark">${{(desiredAmount + tax) + (annualRate*desiredAmount)/100 | number}}</span>
+        </button>
+      </div>
+    </div>
+    <div class="row py-1">
+      <div class="col text-right align-self-center text-muted">CAT</div>
+      <div class="col align-self-center">
+        <button mat-stroked-button disabled class="w-100 ">
+          <span class="text-dark">{{cat | number}}%</span>
+        </button>
+      </div>
+    </div>
+  </mat-card-content>
+  <mat-card-actions class="text-center mb-3">
+    <button mat-flat-button color="primary">SOLICITAR MI CREDITO</button>
+  </mat-card-actions>
+</mat-card>
